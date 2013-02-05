@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/calem">
+    <Resource auth="Container"
+              driverClassName="org.postgresql.Driver"
+              logAbandoned="true"
+              maxActive="10"
+              maxIdle="3"
+              maxWait="10000"
+              name="jdbc/pgsql/dalem"
+              password="${pgsql.dalem.password}"
+              removeAbandoned="true"
+              type="javax.sql.DataSource"
+              url="jdbc:postgresql://pgsql.ct.utfpr.edu.br/dalem"
+              username="${pgsql.dalem.username}"/>
+</Context>
