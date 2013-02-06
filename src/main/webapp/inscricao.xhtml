@@ -65,8 +65,36 @@
                     <ice:inputText id="cidade" value="#{inscricaoBean.candidato.cidade}" size="50"
                             styleClass="ui-inputfield" label="cidade" maxlength="50" required="true"/>
                     <ice:outputLabel for="estado" value="Estado"/>
-                    <ice:inputText id="estado" value="#{inscricaoBean.candidato.estado}" size="4"
-                            styleClass="ui-inputfield" label="Estado" maxlength="2" required="true"/>
+                    <ice:selectOneMenu id="estado" value="#{inscricaoBean.candidato.estado}" style="width:6em" styleClass="ui-selectonemenu"
+                                       required="true" label="Estado">
+                      <f:selectItem itemValue="Acre" itemLabel="AC"/>
+                      <f:selectItem itemValue="Alagoas" itemLabel="AL"/>
+                      <f:selectItem itemValue="Amapá" itemLabel="AP"/>
+                      <f:selectItem itemValue="Amazonas" itemLabel="AM"/>
+                      <f:selectItem itemValue="Bahia" itemLabel="BA"/>
+                      <f:selectItem itemValue="Ceará" itemLabel="CE"/>
+                      <f:selectItem itemValue="Distrito Federal" itemLabel="DF"/>
+                      <f:selectItem itemValue="Espírito Santo" itemLabel="ES"/>
+                      <f:selectItem itemValue="Goiás" itemLabel="GO"/>
+                      <f:selectItem itemValue="Maranhão" itemLabel="MA"/>
+                      <f:selectItem itemValue="Mato Grosso" itemLabel="MT"/>
+                      <f:selectItem itemValue="Mato Grosso do Sul" itemLabel="MS"/>
+                      <f:selectItem itemValue="Minas Gerais" itemLabel="MG"/>
+                      <f:selectItem itemValue="Pará" itemLabel="PA"/>
+                      <f:selectItem itemValue="Paraíba" itemLabel="PB"/>
+                      <f:selectItem itemValue="Paraná" itemLabel="PR"/>
+                      <f:selectItem itemValue="Pernambuco" itemLabel="PE"/>
+                      <f:selectItem itemValue="Piauí" itemLabel="PI"/>
+                      <f:selectItem itemValue="Rio de Janeiro" itemLabel="RJ"/>
+                      <f:selectItem itemValue="Rio Grande do Norte" itemLabel="RN"/>
+                      <f:selectItem itemValue="Rio Grande do Sul" itemLabel="RS"/>
+                      <f:selectItem itemValue="Rondônia" itemLabel="RO"/>
+                      <f:selectItem itemValue="Roraima" itemLabel="RR"/>
+                      <f:selectItem itemValue="Santa Catarina" itemLabel="SC"/>
+                      <f:selectItem itemValue="São Paulo" itemLabel="SP"/>                      
+                      <f:selectItem itemValue="Sergipe" itemLabel="SE"/>
+                      <f:selectItem itemValue="Tocantins" itemLabel="TO"/>
+                    </ice:selectOneMenu>
                 </ice:panelGroup>
                 <ice:panelGroup>
                     <ice:outputLabel for="cep" value="CEP"/>
