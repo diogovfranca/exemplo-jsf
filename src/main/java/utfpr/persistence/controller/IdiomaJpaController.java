@@ -4,7 +4,7 @@
  */
 package utfpr.persistence.controller;
 
-import calem.persistence.entity.Idioma;
+import inscricao.persistence.entity.Idioma;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
@@ -15,7 +15,7 @@ import javax.persistence.criteria.CriteriaQuery;
  *
  * @author Wilson
  */
-public class IdiomaJpaController extends PgsqlJpaController {
+public class IdiomaJpaController extends JpaController {
 
     public IdiomaJpaController() {
     }

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package calem.persistence.entity;
+package inscricao.persistence.entity;
 
 import java.io.Serializable;
 import javax.persistence.Basic;

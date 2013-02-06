@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package calem.faces.validator;
+package inscricao.faces.validator;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;

@@ -1,10 +1,10 @@
-package calem.faces.mngbeans;
+package inscricao.faces.mngbeans;
 
-import calem.faces.convert.CEPConverter;
-import calem.faces.convert.CPFConverter;
-import calem.faces.validator.CPFValidator;
-import calem.persistence.entity.Candidato;
-import calem.persistence.entity.Idioma;
+import inscricao.faces.convert.CEPConverter;
+import inscricao.faces.convert.CPFConverter;
+import inscricao.faces.validator.CPFValidator;
+import inscricao.persistence.entity.Candidato;
+import inscricao.persistence.entity.Idioma;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -16,7 +16,7 @@ import javax.faces.model.SelectItem;
 import javax.persistence.EntityManager;
 import utfpr.faces.support.PageBean;
 import utfpr.persistence.controller.IdiomaJpaController;
-import utfpr.persistence.controller.PgsqlJpaController;
+import utfpr.persistence.controller.JpaController;
 
 /**
  *
@@ -24,7 +24,7 @@ import utfpr.persistence.controller.PgsqlJpaController;
  */
 @ManagedBean
 @RequestScoped
-public class ProficienciaBean extends PageBean {
+public class InscricaoBean extends PageBean {
     private Candidato candidato = new Candidato(new Idioma(1)); // inicialmente ingles
     private boolean linkGRUVisivel = false;
     private CPFConverter cpfConverter = new CPFConverter();
@@ -54,7 +54,7 @@ public class ProficienciaBean extends PageBean {
     }
  
     private boolean validaCandidato() {
-        PgsqlJpaController ctl = new PgsqlJpaController();
+        JpaController ctl = new JpaController();
         EntityManager em = ctl.getEntityManager();
         try {
             Candidato c = em.find(Candidato.class, candidato.getCpf());
@@ -97,7 +97,7 @@ public class ProficienciaBean extends PageBean {
     }
     
     public void inscricaoAction() {
-        PgsqlJpaController ctl = new PgsqlJpaController();
+        JpaController ctl = new JpaController();
         EntityManager em = ctl.getEntityManager();
         try {
             if (validaCandidato()) {

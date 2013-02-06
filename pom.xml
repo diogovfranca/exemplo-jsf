@@ -172,7 +172,7 @@
                 </executions>
             </plugin>
         </plugins>
-        <finalName>calem</finalName>
+        <finalName>exemplo-jsf</finalName>
     </build>
     <repositories>
         <repository>

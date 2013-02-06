@@ -24,7 +24,7 @@ public class JpaController {
 
     public EntityManagerFactory getEMFactory() {
         if (emf == null)
-            emf = Persistence.createEntityManagerFactory("CalemPU");
+            emf = Persistence.createEntityManagerFactory("InscricaoPU");
         return emf;
     }
 
